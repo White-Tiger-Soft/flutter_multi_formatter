@@ -626,8 +626,7 @@ class PhoneCodes {
           toNumericString(
             data['internalPhoneCode'],
             allowAllZeroes: true,
-          ) ==
-          phoneCode,
+          ).startsWith(phoneCode),
     );
     if (rawData != null) {
       return PhoneCountryData.fromMap(rawData);
